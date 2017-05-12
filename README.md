@@ -1,4 +1,4 @@
-##Default style guide for projects
+## Default style guide
 
 This style guide is done so we can have a starting point for future projects. More
 
