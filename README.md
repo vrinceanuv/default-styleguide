@@ -1,6 +1,7 @@
 ## Default style guide
 
-This style guide is done so we can have a starting point for future projects. More
+This style guide is done so we can have a starting point for future projects.
+The reset used is Eric Meyer's Reset.
 
 ## Features
 - **Typography**
