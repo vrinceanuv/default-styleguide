@@ -1,4 +1,11 @@
 @import './reset/index.scss';
+@import './utils/index.scss';
 @import './typography/index.scss';
 @import './grid/index.scss';
 @import './branding/index.scss';
+@import './elements/index.scss';
+
+html * {
+  font-family: $default-font;
+  font-weight: $regular;
+}
