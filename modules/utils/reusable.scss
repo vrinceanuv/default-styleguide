@@ -11,8 +11,8 @@ $size-list: (small: $padding-small, medium: $padding-medium, large: $padding-lar
 // Padding vertical (top, bottom)
 @each $size, $sizes in $size-list {
   .padding-vertical-#{$size} {
-    padding-left: $sizes;
-    padding-right: $sizes;
+    padding-top: $sizes;
+    padding-bottom: $sizes;
   }
 }
 

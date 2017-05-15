@@ -1,0 +1,15 @@
+input {
+  &[type="text"] {
+    @extend .padding-round-medium;
+    @include border-radius(5px);
+    @include box-shadow(none);
+
+    border: 1px solid $lavender-gray;
+    font-size: $input;
+    width: auto;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
