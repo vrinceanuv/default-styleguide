@@ -1,5 +1,5 @@
-// Padding sizes
-$size-list: (small: $padding-small, medium: $padding-medium, large: $padding-large);
+/* Padding reusable styles */
+$size-list: (small: $padding-small, medium: $padding-medium, large: $padding-large, xlarge: $padding-xlarge);
 
 // Padding all around (top, right, bottom, left)
 @each $size, $sizes in $size-list {
@@ -50,4 +50,9 @@ $size-list: (small: $padding-small, medium: $padding-medium, large: $padding-lar
   .padding-left-#{$size} {
     padding-left: $sizes;
   }
+}
+
+/* Other reusable styles */
+.center-align {
+  @include center-block;
 }

@@ -1,15 +1,29 @@
-input {
-  &[type="text"] {
-    @extend .padding-round-medium;
-    @include border-radius(5px);
-    @include box-shadow(none);
+form {
+  @extend .padding-top-xlarge;
 
-    border: 1px solid $lavender-gray;
-    font-size: $input;
-    width: auto;
-
-    &:focus {
-      outline: none;
-    }
+  legend {
+    font-size: $h2;
+    font-weight: $bold;
   }
+}
+
+input {
+  &:focus {
+    outline: none;
+  }
+}
+
+input[type="text"], textarea {
+  @extend .padding-round-medium;
+
+  @include border-radius(3px);
+  @include box-shadow(none);
+
+  border: 1px solid $lavender-gray;
+  font-size: $font-text;
+  width: auto;
+}
+
+textarea {
+  resize: vertical;
 }

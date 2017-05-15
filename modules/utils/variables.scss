@@ -1,31 +1,34 @@
 // Font
-$droid-serif:       'Droid Serif', serif;
-$default-font:     $droid-serif;
+$droid-serif:              'Droid Serif', serif;
+$default-font:             $droid-serif;
 
 // Font weight
-$regular:          400;
-$bold:             700;
+$regular:                  400;
+$bold:                     700;
 
 // Font sizes
-$h1:               32px;
-$h2:               24px;
-$h3:               18px;
-$h4:               15px;
-$h5:               13px;
-$h6:               11px;
+$h1:                       32px;
+$h2:                       24px;
+$h3:                       18px;
+$h4:                       15px;
+$h5:                       13px;
+$h6:                       11px;
 
-$paragraph:        14px;
-$input:            $paragraph;
+$paragraph:                14px;
+$font-text:                    $paragraph;
 
 // Paddings
-$padding-small:    5px;
-$padding-medium:   10px;
-$padding-large:    15px;
+$padding-small:            5px;
+$padding-medium:           10px;
+$padding-large:            15px;
+$padding-xlarge:           25px;
 
 // Colors
-$rich-black:       #090617;
-$japanese-indigo:  #243147;
-$dark-cerulean:    #124A72;
-$cerulean:         #1276A9;
-$spiro-disco:      #28D6F7;
-$lavender-gray:    #C5C3C6;
+$rich-black:               #090617;
+$japanese-indigo:          #243147;
+$dark-cerulean:            #124A72;
+$cerulean:                 #1276A9;
+$spiro-disco:              #28D6F7;
+$lavender-gray:            #C5C3C6;
+$outer-space:              #46494C;
+$deep-space-sparkle:       #4C5C68;
