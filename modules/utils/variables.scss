@@ -1,9 +1,15 @@
 // Font
-$montserrat:       'Montserrat', sans-serif;
-$default-font:     $montserrat;
+$droid-serif:       'Droid Serif', serif;
+$default-font:     $droid-serif;
 
 // Font weight
-$light:            300;
 $regular:          400;
-$bold:             500;
-$black:            700;
+$bold:             700;
+
+// Font sizes
+$h1:               32px;
+$h2:               24px;
+$h3:               18px;
+$h4:               15px;
+$h5:               13px;
+$h6:               11px;
