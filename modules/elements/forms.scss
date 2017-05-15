@@ -2,8 +2,7 @@ form {
   @extend .padding-top-xlarge;
 
   legend {
-    font-size: $h2;
-    font-weight: $bold;
+    @extend h2;
   }
 }
 
@@ -11,6 +10,10 @@ input {
   &:focus {
     outline: none;
   }
+}
+
+input, textarea {
+  @extend .margin-bottom-medium;
 }
 
 input[type="text"], textarea {

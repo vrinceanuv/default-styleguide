@@ -1,4 +1,4 @@
-/* Padding reusable styles */
+/* Padding and margins reusable styles */
 $size-list: (small: $padding-small, medium: $padding-medium, large: $padding-large, xlarge: $padding-xlarge);
 
 // Padding all around (top, right, bottom, left)
@@ -49,6 +49,57 @@ $size-list: (small: $padding-small, medium: $padding-medium, large: $padding-lar
 @each $size, $sizes in $size-list {
   .padding-left-#{$size} {
     padding-left: $sizes;
+  }
+}
+
+// Margin all around (top, right, bottom, left)
+@each $size, $sizes in $size-list {
+  .margin-round-#{$size} {
+    margin: $sizes;
+  }
+}
+
+// Padding vertical (top, bottom)
+@each $size, $sizes in $size-list {
+  .margin-vertical-#{$size} {
+    margin-top: $sizes;
+    margin-bottom: $sizes;
+  }
+}
+
+// Padding horizontal (right, left)
+@each $size, $sizes in $size-list {
+  .margin-horizontal-#{$size} {
+    margin-left: $sizes;
+    margin-right: $sizes;
+  }
+}
+
+// Padding top
+@each $size, $sizes in $size-list {
+  .margin-top-#{$size} {
+    margin-top: $sizes;
+  }
+}
+
+// Padding right
+@each $size, $sizes in $size-list {
+  .margin-right-#{$size} {
+    margin-right: $sizes;
+  }
+}
+
+// Padding bottom
+@each $size, $sizes in $size-list {
+  .margin-bottom-#{$size} {
+    margin-bottom: $sizes;
+  }
+}
+
+// Padding left
+@each $size, $sizes in $size-list {
+  .margin-left-#{$size} {
+    margin-left: $sizes;
   }
 }
 
