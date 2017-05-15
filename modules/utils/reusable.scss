@@ -1,0 +1,53 @@
+// Padding sizes
+$size-list: (small: $padding-small, medium: $padding-medium, large: $padding-large);
+
+// Padding all around (top, right, bottom, left)
+@each $size, $sizes in $size-list {
+  .padding-round-#{$size} {
+    padding: $sizes;
+  }
+}
+
+// Padding vertical (top, bottom)
+@each $size, $sizes in $size-list {
+  .padding-vertical-#{$size} {
+    padding-left: $sizes;
+    padding-right: $sizes;
+  }
+}
+
+// Padding horizontal (right, left)
+@each $size, $sizes in $size-list {
+  .padding-horizontal-#{$size} {
+    padding-left: $sizes;
+    padding-right: $sizes;
+  }
+}
+
+// Padding top
+@each $size, $sizes in $size-list {
+  .padding-top-#{$size} {
+    padding-top: $sizes;
+  }
+}
+
+// Padding right
+@each $size, $sizes in $size-list {
+  .padding-right-#{$size} {
+    padding-right: $sizes;
+  }
+}
+
+// Padding bottom
+@each $size, $sizes in $size-list {
+  .padding-bottom-#{$size} {
+    padding-bottom: $sizes;
+  }
+}
+
+// Padding left
+@each $size, $sizes in $size-list {
+  .padding-left-#{$size} {
+    padding-left: $sizes;
+  }
+}
