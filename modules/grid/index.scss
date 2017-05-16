@@ -1,14 +1,14 @@
 $columns: (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12);
 
 .container {
-  width: $large-container;
-  @include center-block;
+  width: $xlarge-container;
+  @include center-block();
 }
 
 .row {
   display: flex;
   flex-direction: row;
-  margin: 10px 0;
+  @include clearfix();
 }
 
 .col {
@@ -16,12 +16,60 @@ $columns: (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12);
   float: left;
   padding: 10px 0;
   background-color: $lavender-gray;
-  width: $column-width;
-  margin: 0 $grid-gutter/2;
+  width: $column-width-xlarge;
+  margin: 0 $grid-gutter/2 10px;
 }
 
 @each $size in $columns {
   .col-#{$size} {
-    width: $column-width * $size + $grid-gutter * ($size - 1);
+    width: $column-width-xlarge * $size + $grid-gutter * ($size - 1);
+  }
+}
+
+@media (max-width: $large-breakpoint) {
+  .container {
+    width: $large-container;
+  }
+
+  .col {
+    width: $column-width-large;
+  }
+
+  @each $size in $columns {
+    .col-#{$size} {
+      width: $column-width-large * $size + $grid-gutter * ($size - 1);
+    }
+  }
+}
+
+@media (max-width: $medium-breakpoint) {
+  .container {
+    width: $medium-container;
+  }
+
+  .col {
+    width: $column-width-medium;
+  }
+
+  @each $size in $columns {
+    .col-#{$size} {
+      width: $column-width-medium * $size + $grid-gutter * ($size - 1);
+    }
+  }
+}
+
+@media (max-width: $small-breakpoint) {
+  .container {
+    width: $small-container;
+  }
+
+  .col {
+    width: $column-width-small;
+  }
+
+  @each $size in $columns {
+    .col-#{$size} {
+      width: $column-width-small * $size + $grid-gutter * ($size - 1);
+    }
   }
 }

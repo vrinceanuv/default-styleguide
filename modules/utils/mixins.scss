@@ -20,8 +20,18 @@
     box-shadow: $value;
 }
 
-@mixin center-block {
+// Usage: @include center-block;
+@mixin center-block() {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+// Usage: @include clearfix();
+@mixin clearfix() {
+  &::after {
+    display: block;
+    clear: both;
+    content: "";
+  }
 }

@@ -1,8 +1,19 @@
 // Grid
-$grid-gutter: 30px;
-$large-container: 1170px;
-$grid-columns: 12;
-$column-width: ($large-container - ($grid-columns - 1) * $grid-gutter) / $grid-columns;
+$grid-gutter:              30px;
+$xlarge-container:         1140px;
+$large-container:          960px;
+$medium-container:         768px;
+$small-container:          576px;
+$grid-columns:             12;
+
+$large-breakpoint:         1200px;
+$medium-breakpoint:        992px;
+$small-breakpoint:         768px;
+
+$column-width-xlarge:      ($xlarge-container - ($grid-columns - 1) * $grid-gutter) / $grid-columns;
+$column-width-large:       ($large-container - ($grid-columns - 1) * $grid-gutter) / $grid-columns;
+$column-width-medium:      ($medium-container - ($grid-columns - 1) * $grid-gutter) / $grid-columns;
+$column-width-small:       ($small-container - ($grid-columns - 1) * $grid-gutter) / ($grid-columns / 2);
 
 // Font
 $droid-serif:              'Droid Serif', serif;
