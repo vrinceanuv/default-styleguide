@@ -1,21 +1,20 @@
 $columns: (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12);
 
 .container {
-  width: $xlarge-container;
   @include center-block();
+  width: $xlarge-container;
 }
 
 .row {
+  @include clearfix();
   display: flex;
   flex-direction: row;
-  @include clearfix();
+  margin: 0 $grid-gutter/2;
 }
 
 .col {
   display: inline-flex;
   float: left;
-  padding: 10px 0;
-  background-color: $lavender-gray;
   width: $column-width-xlarge;
   margin: 0 $grid-gutter/2 10px;
 }
@@ -70,6 +69,22 @@ $columns: (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12);
   @each $size in $columns {
     .col-#{$size} {
       width: $column-width-small * $size + $grid-gutter * ($size - 1);
+    }
+  }
+}
+
+@media (max-width: $xsmall-breakpoint) {
+  .container {
+    width: 100%;
+  }
+
+  .col {
+    width: 100%;
+  }
+
+  @each $size in $columns {
+    .col-#{$size} {
+      width: 100%;
     }
   }
 }

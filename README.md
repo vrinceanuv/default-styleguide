@@ -18,7 +18,9 @@ _(coming soon)_
 _(coming soon)_
 
 ## Elements
-_(coming soon)_
+- **Forms**
+- **Buttons**
+- **Cards**
 
 ## Contributing
 ```

@@ -4,11 +4,13 @@ $xlarge-container:         1140px;
 $large-container:          960px;
 $medium-container:         768px;
 $small-container:          576px;
+$xsmall-container:         450px;
 $grid-columns:             12;
 
 $large-breakpoint:         1200px;
 $medium-breakpoint:        992px;
 $small-breakpoint:         768px;
+$xsmall-breakpoint:        576px;
 
 $column-width-xlarge:      ($xlarge-container - ($grid-columns - 1) * $grid-gutter) / $grid-columns;
 $column-width-large:       ($large-container - ($grid-columns - 1) * $grid-gutter) / $grid-columns;
@@ -32,7 +34,8 @@ $h5:                       13px;
 $h6:                       11px;
 
 $paragraph:                14px;
-$font-text:                    $paragraph;
+$font-text:                $paragraph;
+$button-text:              $paragraph;
 
 // Paddings
 $padding-small:            5px;
@@ -41,6 +44,7 @@ $padding-large:            15px;
 $padding-xlarge:           25px;
 
 // Colors
+$white:                    #ffffff;
 $rich-black:               #090617;
 $japanese-indigo:          #243147;
 $dark-cerulean:            #124A72;

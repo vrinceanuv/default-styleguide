@@ -1,19 +1,17 @@
 form {
-  @extend .padding-top-xlarge;
-
+  width: 100%;
   legend {
-    @extend h2;
-  }
-}
-
-input {
-  &:focus {
-    outline: none;
+    @extend h3;
+    padding-top: 0;
   }
 }
 
 input, textarea {
   @extend .margin-bottom-medium;
+
+  &:focus {
+    outline: none;
+  }
 }
 
 input[type="text"], textarea {
@@ -24,7 +22,7 @@ input[type="text"], textarea {
 
   border: 1px solid $lavender-gray;
   font-size: $font-text;
-  width: auto;
+  width: 100%;
 }
 
 textarea {

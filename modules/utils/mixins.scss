@@ -7,7 +7,7 @@
 
 
 // Usage: @include border-radius(5px);
-@mixin border-radius($radius) {
+@mixin border-radius($radius: 5px) {
   -webkit-border-radius: $radius;
   border-radius: $radius;
   background-clip: padding-box;  /* stops bg color from leaking outside the border: */
@@ -34,4 +34,19 @@
     clear: both;
     content: "";
   }
+}
+
+// Usage: @include opacity(0.7);
+@mixin opacity($opacity: 0.5) {
+  filter: alpha(opacity=$opacity*100);
+  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=#{$opacity*100});
+  opacity: $opacity;
+}
+
+// Usage: @include transition(all 400ms);
+@mixin transition($transition: all 200ms) {
+    -moz-transition:    $transition;
+    -o-transition:      $transition;
+    -webkit-transition: $transition;
+    transition:         $transition;
 }

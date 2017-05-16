@@ -6,6 +6,6 @@
 @import './elements/index.scss';
 
 html * {
+  @include box-sizing(border-box);
   font-family: $default-font;
-  box-sizing: border-box;
 }

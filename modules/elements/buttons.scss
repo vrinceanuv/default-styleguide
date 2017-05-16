@@ -1,0 +1,25 @@
+button {
+  @include border-radius(3px);
+  @include transition();
+  @extend .padding-vertical-medium;
+  @extend .padding-horizontal-large;
+
+  border: none;
+  color: $cerulean;
+  font-size: $button-text;
+  background-color: transparent;
+  cursor: pointer;
+
+  &.button-primary {
+    background-color: $cerulean;
+    color: $white;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    @include opacity(0.8);
+  }
+}

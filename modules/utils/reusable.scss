@@ -107,3 +107,15 @@ $size-list: (small: $padding-small, medium: $padding-medium, large: $padding-lar
 .center-align {
   @include center-block();
 }
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.float-right {
+  float: right;
+}
+
+.float-left {
+  float: left;
+}
