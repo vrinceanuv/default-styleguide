@@ -112,6 +112,10 @@ $size-list: (small: $padding-small, medium: $padding-medium, large: $padding-lar
   text-transform: uppercase;
 }
 
+.lowercase {
+  text-transform: uppercase;
+}
+
 .float-right {
   float: right;
 }

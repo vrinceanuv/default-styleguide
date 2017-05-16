@@ -25,7 +25,10 @@ _(coming soon)_
 ## Reusable classes
 - Float
 ```html
+<!-- floating an element to the left -->
 <div class="float-left"></div>
+
+<!-- floating an element to the right -->
 <div class="float-right"></div>
 ```
 
@@ -75,6 +78,21 @@ _(coming soon)_
 
 <!-- margin left -->
 <div class="margin-left-small"></div>
+```
+
+- Alignment
+```html
+<!-- horizontally centering a block element -->
+<div class="center-align"></div>
+```
+
+- Text transforms
+```html
+<!-- transforming the text inside the element to uppercase -->
+<div class="uppercase"></div>
+
+<!-- transforming the text inside the element to lowercase -->
+<div class="lowercase"></div>
 ```
 
 ## Contributing
