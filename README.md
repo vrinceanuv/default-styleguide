@@ -33,16 +33,22 @@ _(coming soon)_
 ```html
 <!-- padding on all sides -->
 <div class="padding-round-small"></div>
+
 <!-- padding top and bottom -->
 <div class="padding-vertical-small"></div>
+
 <!-- padding left and right -->
 <div class="padding-horizontal-small"></div>
+
 <!-- padding top -->
 <div class="padding-top-small"></div>
+
 <!-- padding right -->
 <div class="padding-right-small"></div>
+
 <!-- padding bottom -->
 <div class="padding-bottom-small"></div>
+
 <!-- padding left -->
 <div class="padding-left-small"></div>
 ```
@@ -51,16 +57,22 @@ _(coming soon)_
 ```html
 <!-- margin on all sides -->
 <div class="margin-round-small"></div>
+
 <!-- margin top and bottom -->
 <div class="margin-vertical-small"></div>
+
 <!-- margin left and right -->
 <div class="margin-horizontal-small"></div>
+
 <!-- margin top -->
 <div class="margin-top-small"></div>
+
 <!-- margin right -->
 <div class="margin-right-small"></div>
+
 <!-- margin bottom -->
 <div class="margin-bottom-small"></div>
+
 <!-- margin left -->
 <div class="margin-left-small"></div>
 ```
