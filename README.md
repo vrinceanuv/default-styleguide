@@ -14,7 +14,6 @@ _(coming soon)_
 ## Grid
 - **12 columns grid**
 - **Simple and not responsive(yet)**
-- **Examples**
 ```html
 <div class="container">
   <div class="row">
@@ -30,7 +29,49 @@ _(coming soon)_
 
 ## Elements
 - **Forms**
+```html
+<form action="#">
+  <!-- Legend element -->
+  <legend>Form Legend</legend>
+
+  <!-- Text input -->
+  <input type="text">
+
+  <!-- Textarea -->
+  <textarea rows="5"></textarea>
+
+  <!-- Title heading for a radio group -->
+  <span class="group-title">What are your hobbies?</span>
+
+  <!-- Checkboxes -->
+  <input type="checkbox" id="cycling" name="hobbies"> <label for="cycling">Cycling</label>
+  <input type="checkbox" id="running" name="hobbies"> <label for="running">Running</label>
+
+  <div class="clearfix"></div>
+
+  <!-- Title heading for a radio group -->
+  <span class="group-title">In what department are you working?</span>
+
+  <!-- Radio buttons -->
+  <input type="radio" id="designer" name="profession-choice"> <label for="designer">Creative</label>
+  <input type="radio" id="developer" name="profession-choice"> <label for="developer">Development</label>
+</form>
+```
+
 - **Buttons**
+```html
+<!-- Default button -->
+<button>Cancel</button>
+
+<!-- Default button disabled -->
+<button disabled>Cancel</button>
+
+<!-- Primary button -->
+<button class="button-primary">Submit</button>
+
+<!-- Primary button disabled-->
+<button class="button-primary" disabled>Submit</button>
+```
 - **Cards**
 
 ## Reusable classes

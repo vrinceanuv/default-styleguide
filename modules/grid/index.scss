@@ -16,7 +16,7 @@ $columns: (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12);
   display: inline-flex;
   float: left;
   width: $column-width-xlarge;
-  margin: 0 $grid-gutter/2 10px;
+  margin: 5px $grid-gutter/2 5px;
 }
 
 @each $size in $columns {

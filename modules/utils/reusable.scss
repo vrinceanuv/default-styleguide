@@ -123,3 +123,7 @@ $size-list: (small: $padding-small, medium: $padding-medium, large: $padding-lar
 .float-left {
   float: left;
 }
+
+.clearfix {
+  @include clearfix();
+}

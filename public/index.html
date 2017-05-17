@@ -4,8 +4,19 @@
   <meta charset="UTF-8">
   <title>Default Style Guide</title>
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/demo.css">
 </head>
 <body>
+
+  <header class="padding-round-xlarge uppercase">
+    <div class="container">
+      <div class="row">
+        <div class="col col-12">
+          <h1>Default style guide</h1>
+        </div>
+      </div>
+    </div>
+  </header>
 
   <div class="container">
     <div class="row">
@@ -17,14 +28,30 @@
       <div class="col col-6">
         <form action="#">
           <legend>Form Legend</legend>
-          <p>
-            <input type="text">
-          </p>
+          <input type="text">
           <textarea rows="5"></textarea>
 
-          <div class="float-right">
-            <button>Cancel</button>
+          <span class="group-title">What are your hobbies?</span>
+          <input type="checkbox" id="cycling" name="hobbies"> <label for="cycling">Cycling</label>
+          <input type="checkbox" id="running" name="hobbies"> <label for="running">Running</label>
+          <input type="checkbox" id="hiking" name="hobbies"> <label for="hiking">Hiking</label>
+          <input type="checkbox" id="traveling" name="hobbies"> <label for="traveling">Traveling</label>
+
+          <div class="clearfix"></div>
+
+          <span class="group-title">In what department are you working?</span>
+          <input type="radio" id="designer" name="profession-choice"> <label for="designer">Creative</label>
+          <input type="radio" id="developer" name="profession-choice"> <label for="developer">Development</label>
+          <input type="radio" id="sales" name="profession-choice"> <label for="sales">Sales</label>
+          <input type="radio" id="marketing" name="profession-choice"> <label for="marketing">Marketing</label>
+
+          <div class="clearfix"></div>
+
+          <div class="float-left margin-top-large">
+            <!-- <button disabled>Cancel</button> -->
             <button class="button-primary">Submit</button>
+            <button>Cancel</button>
+            <!-- <button class="button-primary" disabled>Submit</button> -->
           </div>
         </form>
       </div>

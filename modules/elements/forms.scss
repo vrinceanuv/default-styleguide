@@ -1,8 +1,15 @@
 form {
   width: 100%;
+  position: relative;
   legend {
-    @extend h3;
+    @extend h2;
     padding-top: 0;
+  }
+
+  .group-title {
+    @extend h3;
+    @extend .margin-top-small;
+    display: block;
   }
 }
 
@@ -21,10 +28,71 @@ input[type="text"], textarea {
   @include box-shadow(none);
 
   border: 1px solid $lavender-gray;
-  font-size: $font-text;
+  font-size: $form-text;
   width: 100%;
 }
 
 textarea {
   resize: vertical;
+}
+
+input[type="checkbox"] {
+  + label {
+
+    &::before,
+    &::after {
+      @include border-radius(3px);
+    }
+  }
+}
+
+input[type="radio"] {
+  + label {
+
+    &::before,
+    &::after {
+      @include border-radius(50%);
+    }
+  }
+}
+
+input[type="checkbox"], input[type="radio"] {
+  display: none;
+
+  + label {
+    @extend .margin-vertical-medium;
+    @extend .padding-horizontal-xlarge;
+    vertical-align: middle;
+    position: relative;
+    display: inline-block;
+
+    &::before {
+      width: 16px;
+      height: 16px;
+      border: 1px solid $outer-space;
+      content: "";
+      position: absolute;
+      left: 0;
+      top: -2px;
+    }
+  }
+
+  &:checked + label {
+    &::before {
+      border: 1px solid $cerulean;
+    }
+    &::after {
+      width: 10px;
+      height: 10px;
+      background-color: $cerulean;
+      content: "";
+      position: absolute;
+      left: 4px;
+      top: 2px;
+    }
+  }
+}
+
+label {
+  font-size: $form-text;
 }

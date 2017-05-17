@@ -33,9 +33,10 @@ $h4:                       15px;
 $h5:                       13px;
 $h6:                       11px;
 
-$paragraph:                14px;
-$font-text:                $paragraph;
-$button-text:              $paragraph;
+$default-text:             16px;
+$font-text:                $default-text;
+$button-text:              $default-text;
+$form-text:                $default-text;
 
 // Paddings
 $padding-small:            5px;

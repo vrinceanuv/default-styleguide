@@ -13,6 +13,11 @@ button {
   &.button-primary {
     background-color: $cerulean;
     color: $white;
+
+    &:disabled {
+      background-color: $lavender-gray;
+      color: $white;
+    }
   }
 
   &:focus {
@@ -21,5 +26,13 @@ button {
 
   &:hover {
     @include opacity(0.8);
+  }
+
+  &:disabled {
+    cursor: default;
+    color: $lavender-gray;
+    &:hover {
+      @include opacity(1);
+    }
   }
 }
