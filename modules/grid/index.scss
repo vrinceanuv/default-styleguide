@@ -59,7 +59,8 @@ $columns: (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12);
 
 @media (max-width: $small-breakpoint) {
   .container {
-    width: $small-container;
+    width: 100%;
+    min-width: 350px;
   }
 
   .col {

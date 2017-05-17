@@ -96,3 +96,14 @@ input[type="checkbox"], input[type="radio"] {
 label {
   font-size: $form-text;
 }
+
+@media (max-width: $small-breakpoint) {
+  input {
+    &[type="checkbox"],
+    &[type="radio"] {
+      + label {
+        display: block;
+      }
+    }
+  }
+}
