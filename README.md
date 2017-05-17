@@ -12,7 +12,18 @@ The reset used is Eric Meyer's Reset.
 _(coming soon)_
 
 ## Grid
-_(coming soon)_
+- **12 columns grid**
+- **Simple and not responsive(yet)**
+- **Examples**
+```html
+<div class="container">
+  <div class="row">
+    <div class="col col-6"></div>
+    <div class="col col-4"></div>
+    <div class="col col-2"></div>
+  </div>
+</div>
+```
 
 ## Branding
 _(coming soon)_
