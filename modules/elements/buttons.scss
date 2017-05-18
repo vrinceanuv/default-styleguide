@@ -10,14 +10,22 @@ button {
   background-color: transparent;
   cursor: pointer;
 
-  &.button-primary {
-    background-color: $cerulean;
+  &.button-primary,
+  &.button-alert {
     color: $white;
 
     &:disabled {
       background-color: $lavender-gray;
       color: $white;
     }
+  }
+
+  &.button-primary {
+    background-color: $cerulean;
+  }
+
+  &.button-alert {
+    background-color: $sunset-orange;
   }
 
   &:focus {

@@ -48,10 +48,36 @@
           <div class="clearfix"></div>
 
           <div class="float-left margin-top-large">
-            <!-- <button disabled>Cancel</button> -->
             <button class="button-primary">Submit</button>
             <button>Cancel</button>
-            <!-- <button class="button-primary" disabled>Submit</button> -->
+          </div>
+        </form>
+      </div>
+      <div class="col col-6">
+        <form action="#">
+          <legend>Form Legend (disabled form)</legend>
+          <input type="text" disabled>
+          <textarea rows="5" disabled></textarea>
+
+          <span class="group-title">What are your hobbies?</span>
+          <input type="checkbox" id="cycling" name="hobbies" disabled checked> <label for="cycling">Cycling</label>
+          <input type="checkbox" id="running" name="hobbies" disabled> <label for="running">Running</label>
+          <input type="checkbox" id="hiking" name="hobbies" disabled> <label for="hiking">Hiking</label>
+          <input type="checkbox" id="traveling" name="hobbies" disabled> <label for="traveling">Traveling</label>
+
+          <div class="clearfix"></div>
+
+          <span class="group-title">In what department are you working?</span>
+          <input type="radio" id="designer-two" name="profession-choice" disabled> <label for="designer-two">Creative</label>
+          <input type="radio" id="developer-two" name="profession-choice" disabled> <label for="developer-two">Development</label>
+          <input type="radio" id="sales-two" name="profession-choice" disabled checked> <label for="sales-two">Sales</label>
+          <input type="radio" id="marketing-two" name="profession-choice" disabled> <label for="marketing-two">Marketing</label>
+
+          <div class="clearfix"></div>
+
+          <div class="float-left margin-top-large">
+            <button class="button-primary" disabled>Submit</button>
+            <button disabled>Cancel</button>
           </div>
         </form>
       </div>
